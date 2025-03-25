@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuis JavaScript</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form name="FormLogin" onsubmit="return validateForm()">
+        <h3>Form Login</h3>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Username" name="username"><br>
+
+        <label for="password">Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Password" name="password">
+            <i class="far fa-eye" id="togglePassword"></i>
+        </div>
+        
+        <div class="button-container">
+            <button type="reset">Reset</button>
+            <button type="submit">Log In</button>
+        </div>
+    </form>
+</body>
+</html>
